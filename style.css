@@ -1,0 +1,71 @@
+.box-1{
+    width: 100px;
+    height: 102px;
+    background: rgba(65, 105, 225, 0.11);
+    border: 1px solid black;
+    border-radius: 34px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-name: animationName; */
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #25b09b;
+    --_m: 
+      conic-gradient(#0000 10%,#000),
+      linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    -webkit-mask-composite: source-out;
+            mask-composite: subtract;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {40%{transform: rotate(1turn)}}
+/* insturction Keyframes */
+
+/* @keyframes animationName {
+    0%{
+        top: 0px;
+        left: 500px;
+        
+    }
+    20%{
+        left: 500px;
+        top: 300px;
+    }
+    40%{
+        top: 300px;
+        left: 800px;
+    }
+    60%{
+        top: 500px;
+        left: 800px;
+    }
+    80%{
+        left: 0px;
+        top: 500px; 
+    }
+    90%{
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        
+    }
+} */
+ @keyframes animationName {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+
+    }
+ }
